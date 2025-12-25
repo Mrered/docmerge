@@ -1,0 +1,5 @@
+{
+  "name": "DocMerge Master",
+  "description": "A progressive web app to merge multiple Word documents into one while strictly preserving original formatting and layout. Runs entirely in the browser.",
+  "requestFramePermissions": []
+}
