@@ -4,7 +4,7 @@
   "description": "一键合并多个 Word 文档，完美保留原始排版与内容",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f3f4f6",
+  "background_color": "#0f172a",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",
   "icons": [
