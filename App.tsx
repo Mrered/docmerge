@@ -106,11 +106,21 @@ const App: React.FC = () => {
       {/* Sticky Header with Glassmorphism */}
       <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-gray-100 dark:border-slate-800 transition-colors duration-300">
         <div className="max-w-2xl mx-auto px-4 pt-[calc(env(safe-area-inset-top)+1rem)] pb-4 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg shadow-brand-500/20">
-               <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-               </svg>
+          <div className="flex items-center gap-3">
+            {/* New Logo Icon */}
+            <div className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-700 shadow-lg flex items-center justify-center relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-50"></div>
+              <svg className="w-6 h-6 z-10" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="icon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#3b82f6"/>
+                    <stop offset="100%" stopColor="#22d3ee"/>
+                  </linearGradient>
+                </defs>
+                <path d="M144 96 h224 c26.5 0 48 21.5 48 48 v224 c0 26.5-21.5 48-48 48 h-224 c-26.5 0-48-21.5-48-48 v-224 c0-26.5 21.5-48 48-48 z" fill="none" stroke="url(#icon-grad)" strokeWidth="48" />
+                <path d="M192 208 h128 M192 288 h128 M192 368 h64" stroke="url(#icon-grad)" strokeWidth="48" strokeLinecap="round" />
+                <circle cx="368" cy="144" r="32" fill="#22d3ee" />
+              </svg>
             </div>
             <div>
               <h1 className="text-lg font-bold text-slate-900 dark:text-white leading-tight">Doc Merge</h1>
